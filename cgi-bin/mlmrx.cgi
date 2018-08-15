@@ -34,9 +34,9 @@ killprocs
 rm -f /tmp/stream
 
 cmd1="nice -n -5  leaniiorx -v -f $param_Fc -s $param_Fs --bw $param_bw  \
-   	    --bufsize $param_bufsize  --nbufs $param_nbufs  --pmp"
+   	    --bufsize $param_bufsize  --nbufs $param_nbufs"
 cmd2="nice -n -5  leansdrserv  --info3-httpd 8003  --control4-httpd 8004  -v  \
-	   leanmlmrx  --pmp  --fc $param_Fc  --fs $param_Fs \
+	   leanmlmrx  --fc $param_Fc  --fs $param_Fs \
 	   -N $param_fftsize  --maxdev $param_maxdev  \
            --fa $param_Fa  --squelch $param_squelch  \
 	   --fd-info 3  --info-rate $param_uirate  --fd-control 4  \
